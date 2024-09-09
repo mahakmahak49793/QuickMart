@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="order.css">
+    <title>Grocery Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>QuickMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-container">
+        <h1>Order Details</h1>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobno">Mobile No.</label>
+                <input type="text" id="phone" name="phone" placeholder="enter your mobile no." required>
+            </div>
+            <div class="form-group">
+                <label for="add">Shipping Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter shipping address here"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="product">Product</label>
+                <input type="text" id="product" name="product">
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                <option value="payment" disabled selected>Choose Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            </div>
+            <button type="submit" class="submit-btn">Place order</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-nav">
+            <a href="order.html">
+                <h2>Back to top</h2>
+            </a>
+        </div>
+        <div class="footer-container">
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help & FAQs</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Cleaning Items</a></li>
+                    <li><a href="#">Kitchen Utensils</a></li>
+                    <li><a href="#">Packed Food Items</a></li>
+                    <li><a href="#">Food Grains</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Email Us:grocerystore@gmail.in</a></li>
+                    <li><a href="#">Call Us:+919254170731</a></li>
+                </ul>
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grocery Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const productField = document.getElementById('product');
+            const productName = getQueryParam('product');
+            if (productName) {
+                productField.value = decodeURIComponent(productName);
+            }
+        });
+        const orderForm = document.getElementById('order-form');
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'submit.html';
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

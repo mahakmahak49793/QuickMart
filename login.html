@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Grocery Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>QuickMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><select class="product" id="product-select">Product
+                    <option>Choose Category</option>
+                    <option value="shop1.html">Cleaning items</option>
+                    <option value="shop2.html">Kitchen Utensil</option>
+                    <option value="shop3.html">Packed Food Items</option>
+                    <option value="shop4.html">Food Grains</option>
+                </select></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/fblogo.jpeg">
+                <img src="images/googlelogo.png">
+                <img src="images/twitterlogo.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <a href="login.html">
+                <h2>Back to top</h2>
+            </a>
+        </div>
+        <div class="footer-container">
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help & FAQs</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Cleaning Items</a></li>
+                    <li><a href="#">Kitchen Utensils</a></li>
+                    <li><a href="#">Packed Food Items</a></li>
+                    <li><a href="#">Food Grains</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Email Us:grocerystore@gmail.in</a></li>
+                    <li><a href="#">Call Us:+919254170731</a></li>
+                </ul>
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grocery Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+        }
+    </script>
+</body>
+
+</html>
