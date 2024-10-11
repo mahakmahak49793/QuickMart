@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>QuickMart</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <select class="product" id="product-select">
+              Product
+              <option disabled selected>Choose Category</option>
+              <option value="shop1.html">Cleaning items</option>
+              <option value="shop2.html">Kitchen Utensil</option>
+              <option value="shop3.html">Packed Food Items</option>
+              <option value="shop4.html">Food Grains</option>
+            </select>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Grocery Store</h1>
+        <p>Your One-Stop Shop for Fresh Groceries</p>
+      </div>
+    </section>
+
+    <section class="horizontal-images">
+      <h1 style="text-align: center">FEATURED PRODUCTS</h1>
+      <div class="image-row">
+        <div class="image-box">
+          <a href="shop1.html"
+            ><img
+              src="https://media.istockphoto.com/id/636282540/photo/variety-house-cleaning-product-on-wood-table.jpg?s=612x612&w=0&k=20&c=p_BY3DgmqMvyuN17nHmoEJckWnepJUkXeng8rxgglOM="
+              alt="Image 1"
+              style="height: 209.5px"
+          /></a>
+          <h3>Cleaning Items</h3>
+        </div>
+        <div class="image-box">
+          <a href="shop2.html"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHw-4g3GgYIy3-_r6G1RDMNRSUeStJeikFA&s"
+              alt="Image 2"
+          /></a>
+          <h3>Kitchen Utensils</h3>
+        </div>
+        <div class="image-box">
+          <a href="shop3.html"
+            ><img
+              src="https://www.foodandwine.com/thmb/UjbhFqVkAzxBG93P7POOj64ZxXQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/trader-joes-chef-grocery-list-FT-BLOG0319-bd54957ac64f4fb9a0f97e51e443f5e5.jpg"
+              alt="Image 3"
+          /></a>
+          <h3>Packed Food Items</h3>
+        </div>
+        <div class="image-box">
+          <a href="shop4.html"
+            ><img
+              src="https://images.jdmagicbox.com/rep/b2b/other-grains/other-grains-6.jpg"
+              alt="Image 4"
+          /></a>
+          <h3>Food Grains</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <h2 class="category">Cleaning Items</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61eIK9gQvGL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper Cones"
+          />
+          <h3>Harpic - Lemon, Bathroom Cleaner Liquid</h3>
+          <p class="product-description">1 Litre (Pack of 2)</p>
+          <p class="product-price">₹334</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Harpic - Lemon, Bathroom Cleaner Liquid&price=334"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61iN0hk7O6S._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Ultimate Rolling Paper with Filter Tips"
+          />
+          <h3>Spotzero By 20Milton Mini Spin Mop, Aqua Green, Plastic</h3>
+          <p class="product-description">Set of 1</p>
+          <p class="product-price">₹736</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Spotzero By 20Milton Mini Spin Mop, Aqua Green, Plastic&price=736"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61x87lPmViL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper (King Size)"
+          />
+          <h3>figment Bathroom Cleaning Brush with Wiper Tiles</h3>
+          <p class="product-description">1 Piece</p>
+          <p class="product-price">₹149</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=figment Bathroom Cleaning Brush with Wiper Tiles&price=149"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/A1s1L7H6FyL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper + Roach with Crushing"
+          />
+          <h3>
+            Sparkmate By Crystal Premium Soap Dispenser | SS Scourer & Sponge
+            with Scrubber
+          </h3>
+          <p class="product-description">1 pack</p>
+          <p class="product-price">₹172</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Sparkmate By Crystal Premium Soap Dispenser 2 in 1 - SS Scourer & Sponge with Scrubber&price=172"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71TKjaRzN2L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Classic Slim Rolling Paper"
+          />
+          <h3>
+            Scrub Sponge for Utensil Cleaning, Scratch Proof Scrubber for
+            Kitchen Utensils
+          </h3>
+          <p class="product-description">Pack of 4</p>
+          <p class="product-price">₹170</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Scrub Sponge for Utensil Cleaning, Scratch Proof Scrubber for Kitchen Utensils&price=170"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="product-section">
+      <h2 class="category">Kitchen Utensils</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61zC65dW+aL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper Cones"
+          />
+          <h3>Aluminium Pressure Cooker with Outer Lid</h3>
+          <p class="product-description">1 Piece(3 Litre Capacity)</p>
+          <p class="product-price">₹90</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Aluminium Pressure Cooker with Outer Lid&price=90"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/517nDmj1i8L._AC_UL480_FMwebp_QL65_.jpg"
+          />
+          <h3>Nonstick Aluminium Cookware Gift Set</h3>
+          <p class="product-description">8 Pieces Non-Induction Base Kitchen</p>
+          <p class="product-price">₹90</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Nonstick Aluminium Cookware Gift Set&price=90"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://png.pngtree.com/png-clipart/20210328/original/pngtree-single-handle-frying-pan-kitchen-utensils-stainless-steel-kitchenware-png-image_6159488.png"
+            alt="Brown Rolling Paper (King Size)"
+          />
+          <h3>Single handle frying pan</h3>
+          <p class="product-description">1 Piece</p>
+          <p class="product-price">₹50</p>
+          <button class="add-button">
+            <a href="order.html?product=Single handle frying pan&price=50"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://www.jiomart.com/images/product/original/rvax1zdrvg/first-front-stainless-steel-single-4-in-1-atta-chalni-set-and-multicolour-pack-of-1-product-images-orvax1zdrvg-p600181121-0-202304051520.jpg?im=Resize=(420,420)"
+            alt="Brown Rolling Paper + Roach with Crushing"
+          />
+          <h3>Stainless Steel Single 4 in 1 Atta Chalni Set</h3>
+          <p class="product-description">4 in 1 Pack</p>
+          <p class="product-price">₹222</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Stainless Steel Single 4 in 1 Atta Chalni Set&price=222"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/711qykG8FGL.jpg"
+            alt="Brown Classic Slim Rolling Paper"
+          />
+          <h3>Kitchen Tools Set With Utensil Holder</h3>
+          <p class="product-description">13 Pieces</p>
+          <p class="product-price">₹120</p>
+          <button class="add-button">
+            <a
+              href="order.html?product= Kitchen Tools Set With Utensil Holder&price=120"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="product-section">
+      <h2 class="category">Packed Food Items</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81-BuYOTBdL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper Cones"
+          />
+          <h3>Organic Box 100% Natural and Premium Healthy Mix Dry Fruits</h3>
+          <p class="product-description">500 g(Pack of 1)</p>
+          <p class="product-price">₹90</p>
+          <button class="add-button">
+            <a
+              href="order.html?products=Organic Box 100% Natural and Premium Healthy Mix Dry Fruits&price=90"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71hPJnCDUNL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Ultimate Rolling Paper with Filter Tips"
+          />
+          <h3>Haldiram's Delhi Bhujia Masala | Crispy Namkeen</h3>
+          <p class="product-description">400 g</p>
+          <p class="product-price">₹101</p>
+          <button class="add-button">
+            <a
+              href="order.html?products=Haldiram's Delhi Bhujia Masala | Crispy & Crunchy Traditional Namkeen&price=101"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61MFE0B4oSL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper (King Size)"
+          />
+          <h3>YogaBar Premium Cashews| 100% Natural King Size Crunchy Kaju</h3>
+          <p class="product-description">1 Kg</p>
+          <p class="product-price">₹999</p>
+          <button class="add-button">
+            <a
+              href="order.html?products=YogaBar Premium Cashews| 100% Natural King Size Crunchy Kaju | Premium Nuts & Dry Fruits&price=999"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/51uHfmuzgSL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper + Roach with Crushing"
+          />
+          <h3>
+            Happa Organic Food, Fruit Puree (Apple+Banana) Stage 2, 3 Pouches
+          </h3>
+          <p class="product-description">100 g each</p>
+          <p class="product-price">₹222</p>
+          <button class="add-button">
+            <a
+              href="order.html>product=Happa Organic Food, Fruit Puree (Apple+Banana) Stage 2, 3 Pouches&price=222"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/714xJvklmCL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Classic Slim Rolling Paper"
+          />
+          <h3>
+            Troovy Healthy Tomato Sauce|100% Chemical Free|No Preservatives
+          </h3>
+          <p class="product-description">880Gm (Pack Of 2)</p>
+          <p class="product-price">₹560</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Troovy Healthy Tomato Sauce|100% Chemical Free|No Preservatives&price=560"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="product-section">
+      <h2 class="category">Food Grains</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71OZ9Jf2XCL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper Cones"
+          />
+          <h3>Tata Sampann Unpolished Masoor Dal (Split),</h3>
+          <p class="product-description">1 Kg</p>
+          <p class="product-price">₹160</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Tata Sampann Unpolished Masoor Dal (Split)&price=160"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81aOZbkML1L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Ultimate Rolling Paper with Filter Tips"
+          />
+          <h3>India Gate Basmati Rice</h3>
+          <p class="product-description">5 Kg</p>
+          <p class="product-price">₹406</p>
+          <button class="add-button">
+            <a href="order.html?product=India Gate Basmati Rice&price=406"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/91IDDsuqf-L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper (King Size)"
+          />
+          <h3>
+            Vedaka Popular Unpolished Chana Dal | Naturally Rich Source of
+            Protein
+          </h3>
+          <p class="product-description">1 Kg Pack</p>
+          <p class="product-price">₹50</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Vedaka Popular Unpolished Chana Dal | Naturally Rich Source of Protein&price=50"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71QjUhDFHlL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Rolling Paper + Roach with Crushing"
+          />
+          <h3>Fortune Rozana Dubar Basmati Rice</h3>
+          <p class="product-description">1 Kg</p>
+          <p class="product-price">₹120</p>
+          <button class="add-button">
+            <a
+              href="order.html?product=Fortune Rozana Dubar Basmati Rice&price=120"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81cizA3QHML._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Brown Classic Slim Rolling Paper"
+          />
+          <h3>Roasted Bengal Gram Dal</h3>
+          <p class="product-description">200 gm</p>
+          <p class="product-price">₹175</p>
+          <button class="add-button">
+            <a href="order.html?product=Roasted Bengal Gram Dal&price=175"
+              >BUY NOW</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">
+          <h2>Back to top</h2>
+        </a>
+      </div>
+      <div class="footer-container">
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Help & FAQs</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Cleaning Items</a></li>
+            <li><a href="#">Kitchen Utensils</a></li>
+            <li><a href="#">Packed Food Items</a></li>
+            <li><a href="#">Food Grains</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="#">Email Us:grocerystore@gmail.in</a></li>
+            <li><a href="#">Call Us:+919254170731</a></li>
+          </ul>
+          <div class="social-media">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grocery Store. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
